@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Model>
+  <TU Name ="НПС-1 Родионовская - ПНБ Тихорецк" MN =" Лисичанск - Тихорецк-2">
+    <NPSes>
+      <NPS Name="Родионовская-1" Index ="1" isLast ="false">
+        <CutVLVs>
+          <VLV Index="1"></VLV>
+        </CutVLVs>
+        <MNAs>
+          <MNA Name="МНА-1 (Род-1)" NpsIndex="1" Index="1"></MNA>
+          <MNA Name="МНА-2 (Род-1)" NpsIndex="1" Index="2"></MNA>
+          <MNA Name="МНА-3 (Род-1)" NpsIndex="1" Index="3"></MNA>
+          <MNA Name="МНА-4 (Род-1)" NpsIndex="1" Index="4"></MNA>
+        </MNAs>
+      </NPS>
+    
+      <NPS Name="Кущевская-1" Index ="2" isLast ="false">
+        <CutVLVs>
+          <VLV Index="100"></VLV>
+        </CutVLVs>
+        <MNAs>
+          <MNA Name="МНА-1 (Кущ-1)" NpsIndex="2" Index="5"></MNA>
+          <MNA Name="МНА-2 (Кущ-1)" NpsIndex="2" Index="6"></MNA>
+          <MNA Name="МНА-3 (Кущ-1)" NpsIndex="2" Index="7"></MNA>
+          <MNA Name="МНА-4 (Кущ-1)" NpsIndex="2" Index="8"></MNA>
+        </MNAs>       
+      </NPS>
+    
+      <NPS Name="Тихорецк" Index ="3" isLast ="true">
+        <CutVLVs>
+          <VLV Index="161"></VLV>
+        </CutVLVs>
+      </NPS>
+    </NPSes>
+
+    <Protections>
+      <ConnectionLostProtections>
+        <ConnectionLostProtection Name="Потеря связи ЦСПА с МПСА НПС-1 Родионовская" 
+                                  Index="1"></ConnectionLostProtection>
+        <ConnectionLostProtection Name="Потеря связи ЦСПА с МПСА НПС-1 Кущевская" 
+                                  Index="2"></ConnectionLostProtection>
+        <ConnectionLostProtection Name="Потеря связи ЦСПА с ПНБ Тихорецк"
+                          Index="3"></ConnectionLostProtection>
+      </ConnectionLostProtections>
+    </Protections>
+  </TU>
+  <ProcessDataProvider Address ="localhost" ProgId="OpcTestLab.OpcAnalyzer.1">
+    OpcProvider
+  </ProcessDataProvider>
+</Model>

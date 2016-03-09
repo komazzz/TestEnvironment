@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestEnvironnment>
+    <ProcessDataProvider Address ="serversdku1" ProgId="Infinity.OPCServer">OpcProvider
+
+    </ProcessDataProvider>
+    <VALVES>
+      <VLV
+        Name ="testVLV"
+        Index ="111"
+           >
+        <ProcessTags>
+
+          <PositionTag Type ="int" Direction="ToCSPA" m="3" >
+            AK.MN.TU.testVLV.State
+          </PositionTag>
+
+          <ThreatNotMaskedClosedTag Type="bool" Direction="FromCSPA" m="11">
+            AK.MN.TU.testVLV.m11.ThreatNotMaskedClosedTag
+          </ThreatNotMaskedClosedTag>
+
+          <CutNotMaskedClosedTag Type="bool" Direction="FromCSPA" m="11">
+            AK.MN.TU.testVLV.m11.CutNotMaskedClosedTag
+          </CutNotMaskedClosedTag>
+
+          <ThreatMaskedClosedTag Type="bool" Direction="FromCSPA" m="11">
+            AK.MN.TU.testVLV.m11.ThreatMaskedClosedTag
+          </ThreatMaskedClosedTag>
+
+          <CutMaskedClosedTag Type="bool" Direction="FromCSPA" m="11">
+            AK.MN.TU.testVLV.m11.CutMaskedClosedTag
+          </CutMaskedClosedTag>
+
+          <ThreatNotMaskedClosingTag Type="bool" Direction="FromCSPA" m="11">
+            AK.MN.TU.testVLV.m11.ThreatNotMaskedClosingTag
+          </ThreatNotMaskedClosingTag>
+
+          <CutNotMaskedClosingTag Type="bool" Direction="FromCSPA" m="11">
+            AK.MN.TU.testVLV.m11.CutNotMaskedClosingTag
+          </CutNotMaskedClosingTag>
+
+          <ThreatMaskedClosingTag Type="bool" Direction="FromCSPA" m="11">
+            AK.MN.TU.testVLV.m11.ThreatMaskedClosingTag
+          </ThreatMaskedClosingTag>
+
+          <CutMaskedClosingTag Type="bool" Direction="FromCSPA" m="11">
+            AK.MN.TU.testVLV.m11.CutMaskedClosingTag
+          </CutMaskedClosingTag>
+
+          <ThreatUnknownTag Type="bool" Direction="FromCSPA" m="11">
+            AK.MN.TU.testVLV.m11.ThreatUnknownTag
+          </ThreatUnknownTag>
+
+          <OkTag Type="bool" Direction="FromCSPA" m="11">
+            AK.MN.TU.testVLV.m11.OkTag
+          </OkTag>
+
+          <SetMaskOnTag Type ="bool" Direction="ToCSPA"  m="8">
+            AK.MN.TU.testVLV.m8.SetMaskOnTag
+          </SetMaskOnTag>
+
+          <SetMaskOffTag Type ="bool" Direction="ToCSPA"  m="8">
+            AK.MN.TU.testVLV.m8.SetMaskOffTag
+          </SetMaskOffTag>
+
+          <MaskStateTag Type ="bool" Direction="FromCSPA" m="9">
+            AK.MN.TU.testVLV.m9.MaskStateTag
+          </MaskStateTag>
+
+
+          <SetMaskOnConfirmTag Type ="bool" Direction="FromCSPA" m="60">
+            AK.MN.TU.testVLV.m60.SetMaskOnConfirmTag
+          </SetMaskOnConfirmTag>
+
+          <SetMaskOffConfirmTag Type ="bool" Direction="FromCSPA" m="60">
+            AK.MN.TU.testVLV.m60.SetMaskOffConfirmTag
+          </SetMaskOffConfirmTag>
+
+
+        </ProcessTags>
+      </VLV>
+    </VALVES>
+</TestEnvironnment>
+  
+
